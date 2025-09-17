@@ -1,0 +1,282 @@
+/* Estilo para el header */
+header {
+    background-color: #4d7c20; /* Franja verde */
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background-color: white;
+    color: #4d7c20;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-btn:hover {
+    background-color: #f1f8e9;
+}
+
+body {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para la sección hero */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.hero-text {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.hero-text h2 {
+    font-size: 4rem;
+    color: #4d7c20;
+}
+
+.hero-image img {
+    width: 100%; /* Asegura que la imagen sea responsiva */
+    border-radius: 15px;
+}
+
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.bg-light {
+    background: #f1f8e9;
+}
+
+/* Estilo para la sección "Cómo usar BusTrack" */
+#como-usar {
+    background-color: #eaf5d3; /* Verde claro */
+    min-height: 100vh;                   /* ocupar toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0 2rem;                     /* quitar padding vertical grande para distribuir por flex */
+    text-align: center;
+}
+
+#como-usar h3 {
+    color: #4d7c20;
+    font-size: 3.5rem; /* Aumenta el tamaño del título */
+    margin-bottom: 3rem; /* Más espacio debajo del título */
+}
+
+/* Estilo para las tarjetas */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tarjetas más anchas */
+    gap: 3rem; /* Más espacio entre las tarjetas */
+    max-width: 1200px; /* Limita el ancho total de las tarjetas */
+    margin: 0 auto; /* Centra las tarjetas */
+}
+
+.card {
+    background: white;
+    padding: 2rem; /* Aumenta el espacio interno de las tarjetas */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.card img {
+    width: 350px; /* Aumenta el tamaño de las imágenes */
+    max-width: 300px;     /* Límite máximo para pantallas grandes */
+
+    height: auto;
+    margin-bottom: 1.5rem; /* Más espacio debajo de la imagen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen */
+}
+
+.card h4 {
+    color: #4d7c20;
+    font-size: 2rem; /* Aumenta el tamaño del subtítulo */
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #333;
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Estilo para la sección "Beneficios" */
+#beneficios {
+    background-color: #f1f8e9; /* Fondo verde claro */
+    min-height: 100vh;                    /* ocupar toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+#beneficios h3 {
+    color: #4d7c20;
+    font-size: 3.5rem; /* Aumenta el tamaño del título */
+    margin-bottom: 3rem; /* Más espacio debajo del título */
+}
+
+/* Reutilización de estilos para las tarjetas */
+#beneficios .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tarjetas más anchas */
+    gap: 3rem; /* Más espacio entre las tarjetas */
+    max-width: 1200px; /* Limita el ancho total de las tarjetas */
+    margin: 0 auto; /* Centra las tarjetas */
+}
+
+#beneficios .card {
+    background: white;
+    padding: 2rem; /* Aumenta el espacio interno de las tarjetas */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+#beneficios .card img {
+    width: 350px; /* Aumenta el tamaño de las imágenes */
+    height: auto;
+    margin-bottom: 1.5rem; /* Más espacio debajo de la imagen */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen */
+}
+
+#beneficios .card h4 {
+    color: #4d7c20;
+    font-size: 2rem; /* Aumenta el tamaño del subtítulo */
+    margin-bottom: 1rem;
+}
+
+#beneficios .card p {
+    color: #333;
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+/* Estilo para la sección "Sobre Nosotros" */
+#sobre-nosotros {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    min-height: 100vh;                    /* ocupar toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+#sobre-nosotros h3 {
+    color: #4d7c20;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    flex: 0 0 auto;
+    padding-top: 3rem;
+}
+
+#sobre-nosotros .about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    flex: 1 1 0;
+    justify-content: stretch;
+}
+
+#sobre-nosotros .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 2rem;
+    min-height: 0;
+    flex: 1 1 0;
+}
+
+#sobre-nosotros .card-left {
+    background-color: #eaf5d3;
+    padding: 2rem;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-nosotros .card-left h4 {
+    color: #4d7c20;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#sobre-nosotros .card-right {
+    flex: 2;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-nosotros .card-right p {
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+footer {
+    background: #4d7c20;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
