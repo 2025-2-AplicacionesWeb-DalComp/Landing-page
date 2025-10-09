@@ -280,3 +280,20 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+.lang-btn {
+  background: white;
+  color: #4d7c20;
+  border: 1px solid #4d7c20;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: #f1f8e9;
+}

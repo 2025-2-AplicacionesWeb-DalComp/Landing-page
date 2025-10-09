@@ -1,103 +1,113 @@
+<!-- File: index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DelComp</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DelComp — BusTrack</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="i18n.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 class="logo">BusTrack</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#como-usar">Cómo usar</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                </ul>
-            </nav>
-            <button class="login-btn">Iniciar Sesión</button>
+  <header>
+    <div class="header-container">
+      <!-- Brand -->
+      <div class="brand">
+        <h1 class="logo" data-i18n="logo">BusTrack</h1>
+      </div>
+
+      <!-- Nav (centrado) -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#como-usar" data-i18n="nav.howTo">Cómo usar</a></li>
+          <li><a href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
+          <li><a href="#sobre-nosotros" data-i18n="nav.about">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions (derecha): language switcher + login -->
+      <div class="header-actions">
+        <button id="lang-switcher" class="lang-btn" aria-label="Cambiar idioma" aria-pressed="false">ES</button>
+        <button class="login-btn" data-i18n="header.login">Iniciar Sesión</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2 data-i18n="hero.title">Encuentra tu bus en tiempo real, sin esperas innecesarias</h2>
+      </div>
+      <div class="hero-image">
+        <img src="assets/bus1.png" alt="Bus en carretera" />
+      </div>
+    </section>
+
+    <article id="como-usar">
+      <h3 data-i18n="howTo.title">Cómo usar BusTrack</h3>
+      <div class="steps">
+        <div class="card">
+          <img src="assets/BuscarRuta.png" alt="Buscar ruta" />
+          <h4 data-i18n="howTo.step1.title">Buscar ruta</h4>
+          <p data-i18n="howTo.step1.text">Encuentra fácilmente la mejor ruta para tu destino</p>
         </div>
-    </header>
+        <div class="card">
+          <img src="assets/RecibirAlertas.png" alt="Recibir alertas" />
+          <h4 data-i18n="howTo.step2.title">Recibir alertas</h4>
+          <p data-i18n="howTo.step2.text">Mantente informado sobre cambios o retrasos en tu ruta</p>
+        </div>
+        <div class="card">
+          <img src="assets/ViajarMasSeguro.png" alt="Viajar más seguro" />
+          <h4 data-i18n="howTo.step3.title">Viajar más seguro</h4>
+          <p data-i18n="howTo.step3.text">Planifica tu viaje con información precisa y reduce tiempos de espera</p>
+        </div>
+      </div>
+    </article>
 
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h2>Encuentra tu bus en tiempo real, sin esperas innecesarias</h2>
-            </div>
-            <div class="hero-image">
-                <img src="assets/bus1.png" alt="Bus en carretera">
-            </div>
-        </section>
-        
-        <article id="como-usar">
-            <h3>Cómo usar BusTrack</h3>
-            <div class="steps">
-                <div class="card">
-                    <img src="assets/BuscarRuta.png" alt="Buscar ruta">
-                    <h4>Buscar ruta</h4>
-                    <p>Encuentra fácilmente la mejor ruta para tu destino</p>
-                </div>
-                <div class="card">
-                    <img src="assets/RecibirAlertas.png" alt="Recibir alertas">
-                    <h4>Recibir alertas</h4>
-                    <p>Mantente informado sobre cambios o retrasos en tu ruta</p>
-                </div>
-                <div class="card">
-                    <img src="assets/ViajarMasSeguro.png" alt="Viajar más seguro">
-                    <h4>Viajar más seguro</h4>
-                    <p>Planifica tu viaje con información precisa y reduce tiempos de espera</p>
-                </div>
-            </div>
-        </article>
-        
-        <article id="beneficios">
-            <h3>Beneficios de usar BusTrack</h3>
-            <div class="steps">
-                <div class="card">
-                    <h4>Información en tiempo real</h4>
-                    <p>Mantente actualizado con la ubicación de los buses y los horarios de llegada en vivo, para que nunca esperes más de lo necesario.</p>
-                </div>
-                <div class="card">
-                    <h4>Guardar rutas favoritas</h4>
-                    <p>Accede rápidamente a tus rutas de bus diarias o preferidas para una planificación más rápida y conveniente.</p>
-                </div>
-                <div class="card">
-                    <h4>Alertas y notificaciones</h4>
-                    <p>Recibe alertas instantáneas sobre cambios de ruta o incidentes de tráfico que afecten tu viaje.</p>
-                </div>
-            </div>
-        </article>
+    <article id="beneficios">
+      <h3 data-i18n="benefits.title">Beneficios de usar BusTrack</h3>
+      <div class="steps">
+        <div class="card">
+          <h4 data-i18n="benefits.b1.title">Información en tiempo real</h4>
+          <p data-i18n="benefits.b1.text">Mantente actualizado con la ubicación de los buses y los horarios de llegada en vivo, para que nunca esperes más de lo necesario.</p>
+        </div>
+        <div class="card">
+          <h4 data-i18n="benefits.b2.title">Guardar rutas favoritas</h4>
+          <p data-i18n="benefits.b2.text">Accede rápidamente a tus rutas de bus diarias o preferidas para una planificación más rápida y conveniente.</p>
+        </div>
+        <div class="card">
+          <h4 data-i18n="benefits.b3.title">Alertas y notificaciones</h4>
+          <p data-i18n="benefits.b3.text">Recibe alertas instantáneas sobre cambios de ruta o incidentes de tráfico que afecten tu viaje.</p>
+        </div>
+      </div>
+    </article>
 
-        <article id="sobre-nosotros">
-            <h3>Sobre Nosotros</h3>
-            <div class="about-us">
-                <!-- Card de Misión -->
-                <div class="card">
-                    <div class="card-left">
-                        <h4>Misión</h4>
-                    </div>
-                    <div class="card-right">
-                        <p>Mejorar la experiencia del transporte público ofreciendo información precisa y en tiempo real para estudiantes y trabajadores.</p>
-                    </div>
-                </div>
+    <article id="sobre-nosotros">
+      <h3 data-i18n="about.title">Sobre Nosotros</h3>
+      <div class="about-us">
+        <div class="card">
+          <div class="card-left">
+            <h4 data-i18n="about.mission.title">Misión</h4>
+          </div>
+          <div class="card-right">
+            <p data-i18n="about.mission.text">Mejorar la experiencia del transporte público ofreciendo información precisa y en tiempo real para estudiantes y trabajadores.</p>
+          </div>
+        </div>
 
-                <!-- Card de Visión -->
-                <div class="card">
-                    <div class="card-left">
-                        <h4>Visión</h4>
-                    </div>
-                    <div class="card-right">
-                        <p>Lograr que el transporte público en el Perú sea más eficiente, seguro y accesible, reduciendo tiempos de espera y mejorando la calidad de vida urbana.</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </main>
+        <div class="card">
+          <div class="card-left">
+            <h4 data-i18n="about.vision.title">Visión</h4>
+          </div>
+          <div class="card-right">
+            <p data-i18n="about.vision.text">Lograr que el transporte público en el Perú sea más eficiente, seguro y accesible, reduciendo tiempos de espera y mejorando la calidad de vida urbana.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 DelComp. Todos los derechos reservados.</p>
-    </footer>
+  <footer>
+    <p data-i18n="footer.rights">&copy; 2025 DelComp. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
