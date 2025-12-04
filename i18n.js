@@ -119,8 +119,8 @@ const translations = {
         desc: "Conoce en detalle las funcionalidades principales de BusTrack: búsqueda de rutas, rastreo en tiempo real, alertas, y más. Te mostramos cómo la plataforma te ayuda a encontrar tu bus y viajar sin incertidumbre."
       },
       video2: {
-        title: "Por qué importa el tiempo en transporte público",
-        desc: "Descubre por qué los tiempos de espera son tan críticos para estudiantes y trabajadores, y cómo BusTrack reduce esa incertidumbre para hacer tu viaje diario más eficiente y menos estresante."
+        title: "Conoce al equipo detrás de BusTrack",
+        desc: "Te presentamos a las personas que trabajaron en el desarrollo de BusTrack, compartiendo su visión y compromiso con mejorar el transporte público en Perú."
       }
     },
     footer: {
@@ -244,8 +244,8 @@ const translations = {
         desc: "Learn in detail about BusTrack's main features: route search, real-time tracking, alerts, and more. We show you how the platform helps you find your bus and travel without uncertainty."
       },
       video2: {
-        title: "Why Time Matters in Public Transportation",
-        desc: "Discover why waiting times are so critical for students and workers, and how BusTrack reduces that uncertainty to make your daily commute more efficient and less stressful."
+        title: "Meet the Team Behind BusTrack",
+        desc: "Meet the people who worked on developing BusTrack, sharing their vision and commitment to improving public transportation in Peru."
       }
     },
     footer: {
