@@ -4,129 +4,288 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DelComp — BusTrack</title>
+  <title>BusTrack — Encuentra tu bus en tiempo real</title>
+  <meta name="description" content="BusTrack es una plataforma web que ayuda a estudiantes, trabajadores y empresas de transporte en Perú a rastrear buses en tiempo real y reducir tiempos de espera." />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="i18n.js"></script>
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <!-- Brand -->
-      <div class="brand">
-        <h1 class="logo" data-i18n="logo">BusTrack</h1>
-      </div>
-
-      <!-- Nav (centrado) -->
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a href="#como-usar" data-i18n="nav.howTo">Cómo usar</a></li>
-          <li><a href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
-          <li><a href="#sobre-nosotros" data-i18n="nav.about">Sobre Nosotros</a></li>
-        </ul>
-      </nav>
-
-      <!-- Actions (derecha): language switcher + login -->
-      <div class="header-actions">
-        <button id="lang-switcher" class="lang-btn" aria-label="Cambiar idioma" aria-pressed="false">ES</button>
-        <a href="https://bustrackfront.vercel.app/" class="login-btn" data-i18n="header.login">Iniciar Sesión</a>
+<header>
+  <div class="header-container">
+    <!-- Brand -->
+    <div class="brand">
+      <h1 class="logo" data-i18n="logo">BusTrack</h1>
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <h2 data-i18n="hero.title">Encuentra tu bus en tiempo real, sin esperas innecesarias</h2>
-      </div>
-      <div class="hero-image">
-        <img src="assets/bus1.png" alt="Bus en carretera" />
-      </div>
-    </section>
+    <!-- Nav (centrado) -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#que-ofrece" data-i18n="nav.features">Qué ofrece</a></li>
+        <li><a href="#para-quien" data-i18n="nav.forWhom">Para quién es</a></li>
+        <li><a href="#como-usar" data-i18n="nav.howTo">Cómo usar</a></li>
+        <li><a href="#beneficios" data-i18n="nav.benefits">Beneficios</a></li>
+      </ul>
+    </nav>
 
-    <article id="como-usar">
-      <h3 data-i18n="howTo.title">Cómo usar BusTrack</h3>
-      <div class="steps">
-        <div class="card">
-          <img src="assets/BuscarRuta.png" alt="Buscar ruta" />
-          <h4 data-i18n="howTo.step1.title">Buscar ruta</h4>
-          <p data-i18n="howTo.step1.text">Encuentra fácilmente la mejor ruta para tu destino</p>
-        </div>
-        <div class="card">
-          <img src="assets/RecibirAlertas.png" alt="Recibir alertas" />
-          <h4 data-i18n="howTo.step2.title">Recibir alertas</h4>
-          <p data-i18n="howTo.step2.text">Mantente informado sobre cambios o retrasos en tu ruta</p>
-        </div>
-        <div class="card">
-          <img src="assets/ViajarMasSeguro.png" alt="Viajar más seguro" />
-          <h4 data-i18n="howTo.step3.title">Viajar más seguro</h4>
-          <p data-i18n="howTo.step3.text">Planifica tu viaje con información precisa y reduce tiempos de espera</p>
-        </div>
-      </div>
-    </article>
-
-    <article id="beneficios">
-      <h3 data-i18n="benefits.title">Beneficios de usar BusTrack</h3>
-      <div class="steps">
-        <div class="card">
-          <h4 data-i18n="benefits.b1.title">Información en tiempo real</h4>
-          <p data-i18n="benefits.b1.text">Mantente actualizado con la ubicación de los buses y los horarios de llegada en vivo, para que nunca esperes más de lo necesario.</p>
-        </div>
-        <div class="card">
-          <h4 data-i18n="benefits.b2.title">Guardar rutas favoritas</h4>
-          <p data-i18n="benefits.b2.text">Accede rápidamente a tus rutas de bus diarias o preferidas para una planificación más rápida y conveniente.</p>
-        </div>
-        <div class="card">
-          <h4 data-i18n="benefits.b3.title">Alertas y notificaciones</h4>
-          <p data-i18n="benefits.b3.text">Recibe alertas instantáneas sobre cambios de ruta o incidentes de tráfico que afecten tu viaje.</p>
-        </div>
-      </div>
-    </article>
-
-    <article id="sobre-nosotros">
-      <h3 data-i18n="about.title">Sobre Nosotros</h3>
-      <div class="about-us">
-        <div class="card">
-          <div class="card-left">
-            <h4 data-i18n="about.mission.title">Misión</h4>
-          </div>
-          <div class="card-right">
-            <p data-i18n="about.mission.text">Mejorar la experiencia del transporte público ofreciendo información precisa y en tiempo real para estudiantes y trabajadores.</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-left">
-            <h4 data-i18n="about.vision.title">Visión</h4>
-          </div>
-          <div class="card-right">
-            <p data-i18n="about.vision.text">Lograr que el transporte público en el Perú sea más eficiente, seguro y accesible, reduciendo tiempos de espera y mejorando la calidad de vida urbana.</p>
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <article id="videos-demo" style="margin-top: 40px; padding-bottom: 40px;">
-      <h3 data-i18n="videos.title" style="text-align: center; margin-bottom: 2rem; font-size: 2rem; color: #333;">
-        Demo de la App
-      </h3>
-  
-  <div class="video-container" style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; padding: 0 20px;">
-    
-    <a href="https://youtu.be/6w7bTPVrwXI" target="_blank" rel="noopener noreferrer" 
-       style="display: block; max-width: 560px; min-width: 300px; width: 100%; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
-      <img src="https://img.youtube.com/vi/6w7bTPVrwXI/maxresdefault.jpg" alt="Ver Demo de BusTrack" style="width: 100%; height: auto; display: block; border-radius: 8px;">
-    </a>
-    
-    <a href="https://youtu.be/NyZsjra7Q4A" target="_blank" rel="noopener noreferrer" 
-       style="display: block; max-width: 560px; min-width: 300px; width: 100%; text-decoration: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
-      <img src="https://img.youtube.com/vi/NyZsjra7Q4A/maxresdefault.jpg" alt="Ver Demo de BusTrack (Video 2)" style="width: 100%; height: auto; display: block; border-radius: 8px;">
-    </a>
-
+    <!-- Actions (derecha): language switcher + login -->
+    <div class="header-actions">
+      <button id="lang-switcher" class="lang-btn" aria-label="Cambiar idioma" aria-pressed="false">ES</button>
+      <a href="https://bustrackfront.vercel.app/" class="login-btn" data-i18n="header.login">Iniciar Sesión</a>
+    </div>
   </div>
-</article>
-  </main>
+</header>
 
-  <footer>
-    <p data-i18n="footer.rights">&copy; 2025 DelComp. Todos los derechos reservados.</p>
-  </footer>
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2 data-i18n="hero.title">Encuentra tu bus en tiempo real y viaja sin esperas innecesarias</h2>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
+        BusTrack es una plataforma web que te ayuda a rastrear tu bus en tiempo real, ver tiempos de llegada estimados,
+        paraderos cercanos y recibir alertas sobre tu ruta. Diseñada para estudiantes y trabajadores que dependen del
+        transporte público en Perú, también ofrece herramientas básicas de monitoreo para empresas de transporte.
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="assets/bus1.png" alt="Bus en carretera" />
+    </div>
+  </section>
+
+  <!-- ¿Qué ofrece BusTrack? (NUEVA SECCIÓN) -->
+  <article id="que-ofrece" class="features-section">
+    <h3 data-i18n="features.title">¿Qué ofrece BusTrack?</h3>
+    <p class="section-intro" data-i18n="features.intro">
+      Nuestra plataforma MVP incluye todas las herramientas esenciales para mejorar tu experiencia en transporte público.
+    </p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h4 data-i18n="features.f1.title">Búsqueda de rutas</h4>
+        <p data-i18n="features.f1.text">Encuentra rápidamente las mejores opciones de buses ingresando tu origen y destino.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h4 data-i18n="features.f2.title">Ubicación en tiempo real</h4>
+        <p data-i18n="features.f2.text">Ve dónde está tu bus en este momento con actualización continua en el mapa.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h4 data-i18n="features.f3.title">Tiempos estimados de llegada (ETA)</h4>
+        <p data-i18n="features.f3.text">Conoce cuánto falta para que llegue tu bus y planifica mejor tu salida.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h4 data-i18n="features.f4.title">Paraderos cercanos</h4>
+        <p data-i18n="features.f4.text">Localiza los paraderos más próximos a tu ubicación actual.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h4 data-i18n="features.f5.title">Alertas y notificaciones</h4>
+        <p data-i18n="features.f5.text">Recibe avisos sobre retrasos, cambios de ruta o incidentes de tráfico.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⭐</div>
+        <h4 data-i18n="features.f6.title">Rutas favoritas</h4>
+        <p data-i18n="features.f6.text">Guarda tus rutas más usadas para acceder a ellas con un solo clic.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h4 data-i18n="features.f7.title">Panel de monitoreo para empresas</h4>
+        <p data-i18n="features.f7.text">Las empresas de transporte pueden supervisar su flota y optimizar rutas desde un dashboard básico.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- ¿Para quién es BusTrack? (NUEVA SECCIÓN) -->
+  <article id="para-quien" class="audience-section">
+    <h3 data-i18n="audience.title">¿Para quién es BusTrack?</h3>
+
+    <div class="audience-cards">
+      <div class="audience-card">
+        <div class="audience-icon">🎓</div>
+        <h4 data-i18n="audience.students.title">Estudiantes</h4>
+        <p data-i18n="audience.students.text">
+          Si eres estudiante y dependes del transporte público para llegar a clases, BusTrack te ayuda a salir de casa
+          en el momento exacto, evitando largas esperas en el paradero y llegando puntual a la universidad o instituto.
+        </p>
+      </div>
+
+      <div class="audience-card">
+        <div class="audience-icon">💼</div>
+        <h4 data-i18n="audience.workers.title">Trabajadores</h4>
+        <p data-i18n="audience.workers.text">
+          Como trabajador, tu tiempo es valioso. BusTrack te permite organizar mejor tus desplazamientos diarios,
+          reducir el estrés de esperar sin información y llegar a tiempo a tu trabajo sin complicaciones.
+        </p>
+      </div>
+
+      <div class="audience-card">
+        <div class="audience-icon">🚌</div>
+        <h4 data-i18n="audience.companies.title">Empresas de transporte</h4>
+        <p data-i18n="audience.companies.text">
+          Si administras una flota de buses, BusTrack ofrece un panel básico de monitoreo para que puedas supervisar
+          tus unidades en tiempo real, mejorar la puntualidad y optimizar tus operaciones.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Cómo usar BusTrack -->
+  <article id="como-usar">
+    <h3 data-i18n="howTo.title">Cómo usar BusTrack</h3>
+    <p class="section-intro" data-i18n="howTo.intro">
+      En solo 3 pasos simples, puedes empezar a viajar más tranquilo y organizado.
+    </p>
+
+    <div class="steps">
+      <div class="card">
+        <img src="assets/BuscarRuta.png" alt="Buscar ruta" />
+        <h4 data-i18n="howTo.step1.title">1. Busca tu ruta</h4>
+        <p data-i18n="howTo.step1.text">
+          Ingresa tu punto de origen y tu destino. BusTrack te mostrará las mejores opciones de rutas y buses
+          disponibles en tu zona, con información actualizada.
+        </p>
+      </div>
+      <div class="card">
+        <img src="assets/RecibirAlertas.png" alt="Ver buses en tiempo real" />
+        <h4 data-i18n="howTo.step2.title">2. Ve buses en tiempo real</h4>
+        <p data-i18n="howTo.step2.text">
+          Consulta en el mapa la ubicación exacta de los buses, los paraderos más cercanos y los tiempos estimados
+          de llegada. Todo se actualiza automáticamente para que siempre tengas la información más reciente.
+        </p>
+      </div>
+      <div class="card">
+        <img src="assets/ViajarMasSeguro.png" alt="Recibir alertas" />
+        <h4 data-i18n="howTo.step3.title">3. Recibe alertas y viaja tranquilo</h4>
+        <p data-i18n="howTo.step3.text">
+          Activa las notificaciones para recibir avisos sobre retrasos, cambios de ruta, incidentes de tráfico o
+          cualquier evento que pueda afectar tu viaje. Así podrás ajustar tu plan a tiempo.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Beneficios -->
+  <article id="beneficios">
+    <h3 data-i18n="benefits.title">Beneficios de usar BusTrack</h3>
+    <p class="section-intro" data-i18n="benefits.intro">
+      Descubre cómo BusTrack hace tu día a día más eficiente, seguro y predecible.
+    </p>
+
+    <div class="steps">
+      <div class="card">
+        <h4 data-i18n="benefits.b1.title">Información en tiempo real</h4>
+        <p data-i18n="benefits.b1.text">
+          Nunca más te preguntarás "¿dónde está mi bus?". Con BusTrack sabes exactamente dónde está tu bus y cuándo
+          llegará al paradero. Esto te permite salir de casa en el momento justo y evitar largas esperas bajo el sol o la lluvia.
+        </p>
+      </div>
+      <div class="card">
+        <h4 data-i18n="benefits.b2.title">Ahorra tiempo todos los días</h4>
+        <p data-i18n="benefits.b2.text">
+          Guarda tus rutas favoritas y accede a ellas instantáneamente. Si usas la misma ruta cada día para ir al trabajo
+          o la universidad, BusTrack te permite planificar tu viaje en segundos sin necesidad de buscar cada vez.
+        </p>
+      </div>
+      <div class="card">
+        <h4 data-i18n="benefits.b3.title">Viaja más seguro e informado</h4>
+        <p data-i18n="benefits.b3.text">
+          Las alertas te mantienen al tanto de cualquier imprevisto: desvíos, retrasos o incidentes que puedan afectar
+          tu ruta habitual. Toma decisiones informadas y llega a tu destino sin sorpresas.
+        </p>
+      </div>
+      <div class="card">
+        <h4 data-i18n="benefits.b4.title">Mejora operativa para empresas</h4>
+        <p data-i18n="benefits.b4.text">
+          Si eres una empresa de transporte, el panel de monitoreo te permite supervisar tu flota en tiempo real,
+          identificar áreas de mejora y optimizar rutas para ofrecer un mejor servicio a tus pasajeros.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Sobre Nosotros -->
+  <article id="sobre-nosotros">
+    <h3 data-i18n="about.title">Sobre Nosotros</h3>
+    <div class="about-us">
+      <div class="card">
+        <div class="card-left">
+          <h4 data-i18n="about.mission.title">Misión</h4>
+        </div>
+        <div class="card-right">
+          <p data-i18n="about.mission.text">
+            Transformar la experiencia del transporte público en Perú proporcionando información precisa y en tiempo real
+            que permita a estudiantes, trabajadores y empresas viajar de manera más eficiente, segura y predecible.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-left">
+          <h4 data-i18n="about.vision.title">Visión</h4>
+        </div>
+        <div class="card-right">
+          <p data-i18n="about.vision.text">
+            Ser la plataforma líder en movilidad urbana en Perú, haciendo que el transporte público sea más predecible,
+            accesible y confiable para millones de usuarios, mientras apoyamos a las empresas de transporte en la
+            optimización de sus operaciones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Videos Demo -->
+  <article id="videos-demo">
+    <h3 data-i18n="videos.mainTitle">Conoce más sobre BusTrack</h3>
+
+    <div class="videos-grid">
+      <!-- Video 1 -->
+      <div class="video-card">
+        <a href="https://youtu.be/6w7bTPVrwXI" target="_blank" rel="noopener noreferrer" class="video-link">
+          <img src="https://img.youtube.com/vi/6w7bTPVrwXI/maxresdefault.jpg" alt="Demo de BusTrack" class="video-thumbnail" />
+          <div class="video-play-overlay">
+            <span class="play-icon">▶</span>
+          </div>
+        </a>
+        <div class="video-info">
+          <h4 data-i18n="videos.video1.title">Sobre el producto: BusTrack</h4>
+          <p data-i18n="videos.video1.desc">
+            Conoce en detalle las funcionalidades principales de BusTrack: búsqueda de rutas, rastreo en tiempo real,
+            alertas, y más. Te mostramos cómo la plataforma te ayuda a encontrar tu bus y viajar sin incertidumbre.
+          </p>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="video-card">
+        <a href="https://youtu.be/NyZsjra7Q4A" target="_blank" rel="noopener noreferrer" class="video-link">
+          <img src="https://img.youtube.com/vi/NyZsjra7Q4A/maxresdefault.jpg" alt="Por qué importa el tiempo en transporte público" class="video-thumbnail" />
+          <div class="video-play-overlay">
+            <span class="play-icon">▶</span>
+          </div>
+        </a>
+        <div class="video-info">
+          <h4 data-i18n="videos.video2.title">Por qué importa el tiempo en transporte público</h4>
+          <p data-i18n="videos.video2.desc">
+            Descubre por qué los tiempos de espera son tan críticos para estudiantes y trabajadores, y cómo BusTrack
+            reduce esa incertidumbre para hacer tu viaje diario más eficiente y menos estresante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <p data-i18n="footer.rights">&copy; 2025 DelComp. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>
